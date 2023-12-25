@@ -1,0 +1,2 @@
+execute anchored eyes positioned ^ ^ ^ positioned ~ ~-0.8 ~ if entity @e[type=panda,tag=damage] at @s anchored eyes positioned ^ ^ ^ positioned ~-0.25 ~-0.25 ~-0.25 run function rand:damage-entity
+execute as @e[tag=hit] at @s run tag @s remove hit

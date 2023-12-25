@@ -1,0 +1,5 @@
+execute as @a[scores={hype=1..},nbt={SelectedItem:{tag:{Tags:["itemClick","Hyperion"]}}}] at @s if block ^ ^2 ^10 air if block ^ ^2 ^9 air if block ^ ^2 ^8 air if block ^ ^2 ^7 air if block ^ ^2 ^6 air if block ^ ^2 ^5 air if block ^ ^2 ^4 air if block ^ ^2 ^3 air if block ^ ^2 ^2 air if block ^ ^2 ^1 air run tp @s ^ ^2 ^10
+execute as @a[scores={hype=1..},nbt={SelectedItem:{tag:{Tags:["itemClick","Hyperion"]}}}] at @s run kill @e[type=!player,distance=..7]
+execute as @a[scores={hype=1..},nbt={SelectedItem:{tag:{Tags:["itemClick","Hyperion"]}}}] at @s run particle explosion ~ ~ ~ 0 1 0 10 5
+execute as @a[scores={hype=1..},nbt={SelectedItem:{tag:{Tags:["itemClick","Hyperion"]}}}] at @s run effect give @a[scores={hype=1..}] absorption 30 3 true
+scoreboard players set @a[scores={hype=1..}] hype 0
